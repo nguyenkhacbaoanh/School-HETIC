@@ -1,0 +1,165 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    padding:28px 10% 0 10%;
+    background-color: black;
+    position: absolute;
+}
+
+.logo{
+    width: 113px;
+}
+.icones{
+display: flex;
+width: 80px;
+justify-content: space-between;
+
+}
+nav{
+    width: 443px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav a{
+    font-family: 'Work Sans', sans-serif;
+    font-size:15px;
+    font-weight: 200;
+    letter-spacing: 0.10em;
+    color:white;
+    text-decoration-line: none;
+    
+}
+
+.icones img{
+    height: 20px;
+    
+}
+
+
+
+.splitScreen{
+   
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+#accueil1, #accueil2{
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+    
+
+}
+#accueil2{
+    background-image: url(../img/accueil2.png);    
+}
+#accueil1{
+    background-image: url(../img/accueil1.png);
+}
+
+
+
+
+h2{
+
+    font-family: 'Work Sans', sans-serif;
+    font-size:40px;
+    font-weight: 100;
+    color: white;
+    letter-spacing: 0.1em;
+    
+
+}
+
+
+.full{
+    padding: 55vh 20% 0 20%;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    
+
+   
+}
+
+.Headméduses{
+    border-right: solid 1px;
+    border-color: white;
+    align-items: flex-start;
+    
+
+}
+
+.aquariums h2{
+    text-align: right;
+}
+
+.bouton{
+    width: 140px;
+    height: 40px;
+    font-family: 'Work Sans', sans-serif;
+    font-size:15px;
+    font-weight: 400;
+    text-align: center;
+    background: linear-gradient(135deg, #07B7FC, #033ACB);
+    color: white;
+    text-decoration-line: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+
+
+}
+
+
+
+
+
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:rgb(175, 175, 175);
+	background: rgba(105, 105, 105, 0.5);
+	
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: rgb(155, 155, 155);
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}

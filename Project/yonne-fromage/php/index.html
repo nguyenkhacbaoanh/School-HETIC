@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="font/WorkSans-Light.ttf" rel="prefetch">
+  <link href="font/SourceSansPro-ExtraLightItalic.ttf" rel="prefetch">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+  <title>Yonne - Accueil</title>
+</head>
+
+<body>
+  <div id="videop" class="videop"style="display:block">
+    <section class="section videoSeveContent" style="display: block;">
+      <video id="sevevideo" controls autoplay >
+        <source src="/video/video_seve.mp4" type="video/mp4">
+    </video>
+      <a id="hideVideo" class="fa fa-2x fa-times"></a>
+    </section>
+  </div>
+  <main>
+    
+    <!-- Navbar pour naviguer dans la page
+        Apparait en bas sur la pageO et ensuite en haut des autres pages pour permettre une navigation compréhensif avec un filtre d'ariana -->
+    <nav>
+      <header>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Logo Région Yonne - Accueil" />
+          </a>
+        </div>
+
+        <div class="lienAccueil">
+          <a href="index.html">Accueil</a>
+          <a href="actualite.html" target="_blank">Actualités</a>
+          <a href="faq.html" target="_blank">FAQ</a>
+
+
+          <!-- La page contact n'est pas terminé -->
+          <a href="contact.html">Contact</a>
+        </div>
+      </header>
+      <ul id="menu">
+
+        <li data-menuanchor="page1">
+          <a href="#page1">Semaine du goût</a>
+          <img src="svg/line.svg" alt="Ligne noir menu">
+
+        </li>
+
+
+        <li data-menuanchor="page2">
+          <a href="#page2">Région</a>
+          <img src="svg/line.svg" alt="Ligne noir menu">
+        </li>
+
+
+        <li data-menuanchor="page3">
+          <a href="#page3">Nos producteurs</a>
+          <img src="svg/line.svg" alt="Ligne noir menu">
+        </li>
+
+
+        <li data-menuanchor="page4">
+          <a href="#page4">Fromages doux</a>
+          <img src="svg/line.svg" alt="Ligne noir menu">
+        </li>
+
+        <li data-menuanchor="page5">
+          <a href="#page5">Fromages forts</a>
+        </li>
+
+      </ul>
+    </nav>
+
+
+
+    <!-- chat bot -->
+<div class="bot">
+  <img src="img/bot.png" class="icon">
+</div>
+
+    
+ <div id="live-chat">
+      <div class="hd clearfix">
+
+        <a href="#" class="chat-close">x</a>
+
+        <h4>Bot#1234</h4>
+
+        <span class="chat-message-counter">3</span>
+
+      </div>
+
+      <div class="chat">
+
+        <div class="chat-history">
+         
+          <div class="chat-message clearfix">
+
+            <img src="img/bot.png" alt="" width="32" height="32">
+
+            <div class="chat-message-content clearfix">
+
+              <span class="chat-time">13:35</span>
+
+              <h5>Bot#1234</h5>
+
+              <p>Bienvenue sur le site l'Yonne Conseil Départemental! Avez-vous besoin d'aide ?.</p>
+
+            </div>
+          
+          </div>
+
+          <hr>
+
+          <div class="chat-message clearfix">
+
+            <img src="http://gravatar.com/avatar/2c0ad52fc5943b78d6abe069cc08f320?s=32" alt="" width="32" height="32">
+
+            <div class="chat-message-content clearfix">
+
+              <span class="chat-time">13:37</span>
+
+              <h5>Marco Biedermann</h5>
+
+              <p>Le prix du fromage ?</p>
+
+            </div>
+        
+          </div>
+     
+          <hr>
+
+          <div class="chat-message clearfix">
+
+            <img src="img/bot.png" alt="" width="32" height="32">
+
+            <div class="chat-message-content clearfix">
+
+              <span class="chat-time">13:38</span>
+
+              <h5>Bot#1234</h5>
+
+              <p>Veuillze preciser le fromage que vous désirez.</p>
+
+            </div>
+          
+
+          </div>
+       
+
+          <hr>
+
+        </div>
+        
+        <p class="chat-feedback"></p>
+
+        <form action="#" method="post">
+
+          <fieldset>
+
+            <input type="text" placeholder="Type your message…" autofocus>
+            <input type="hidden">
+
+          </fieldset>
+
+        </form>
+
+      </div>
+
+
+    </div>
+
+    <!-- Balise Div Sur tout le contenue de la Page à afficher - FullPage.js -->
+
+    <div id="fullpage">
+    
+      <!-- Les Balises section represente chacune des slide sur la page
+                 avec l'id sectionX pour le numero de la page et avec les class suivante:
+                     -section: Obligatoire pour Fullpage.js = represente une slide
+                     -présentation: Noms de la section
+                    -fp-noscroll: Scroll naturel désactivé, Indispensable avec l'utilisation du Plugin ScrollOverFlow dans FullPage.js
+                    -active: Class rajouté dans la section par Fullpage.js sur la section vue par l'utilisateur (facilite les animation d'apparition au scroll)-->
+      <section class="section presentation fp-noscroll" id="section0">
+        <div class="textePresentation">
+          <h1 class="title_intensive">Site réalisé dans le cadre d'une semaine intensive à HETIC, tous les contenus et l'existence même de ce site ne
+            participe qu'à une fiction. Toutes ressemblances avec un situation réelle ne serait une fortuite.</h1>
+        </div>
+        <div class="imagesPresentation">
+          <!-- Balise où j'importe l'image principale -->
+
+        </div>
+
+        <hr>
+
+      </section>
+
+      <!-- Première section avec image à gauche et texte à droite -->
+      <section class="section  description fp-noscroll" id="section1">
+        <div class="imagesGauche">
+          <h1>
+            Description</h1>
+        </div>
+
+        <article class="texteGauche">
+          <h2>« Le goût dans tous ses états »</h2>
+          <p class="showm">
+            La semaine du goût favorise les rencontres entre professionnels/petits producteurs et le “public” partout en France mais
+            elle est aussi un véritable moment de partage du patrimoine culinaire. Cette semaine permet de transmettre certaines
+            valeurs telles que l’éducation au goût, la diversité du goût et des saveurs, la transmission des métiers et savoir-faire,
+            le plaisir du goût ainsi que d'opter pour un nouveau style de vie plus équilibré et durable.
+          </p>
+          <a href="http://www.legout.com/" target="_blank" class="liens">Voir plus</a>
+        </article>
+
+        <hr>
+      </section>
+
+
+
+
+      <!-- Deuxième section sur la région Yonne -->
+      <section class="section  qualite fp-noscroll" id="section2">
+        <div class="imagesDroite">
+          <h1>Yonne
+          </h1>
+        </div>
+
+        <article class="texteDroite">
+          <p>
+
+            Le tourisme dans l'Yonne permet de découvrir des vestiges anciens, des monuments historiques, des musées, des vignobles,
+            des spécialités culinaires
+            <span class="showm">, ainsi que de vastes parcs naturels dont le parc de vision de Boutissaint, au cœur de la Puisaye, et une partie
+              du parc naturel régional du Morvan.
+
+              <br/>Le département est également réputé pour son grand vignoble de Chablis, producteur de vin blanc, et pour ses
+              fameux escargots de Bourgogne
+            </span>.
+          </p>
+          <a href="http://www.tourisme-yonne.com/fr/" target="_blank" class="liens">Notre Identité</a>
+        </article>
+
+        <hr>
+      </section>
+
+
+
+
+      <!-- Troisième section sur les producteurs -->
+      <section class="section conseil fp-noscroll" id="section3">
+        <div class="imagesGauche">
+          <h1>Nos producteurs</h1>
+        </div>
+
+        <article class="texteGauche">
+          <h2>« Les petits producteurs on en parle ! »</h2>
+          <p class="showm">
+            Le conseil régional de l’Yonne veut mettre en avant ses petits producteurs à travers cette semaine du goût. Nos petits producteurs
+            disposent de nombreux avantages pour se faire “connaître” comme la transparence quant à la provenance des fromages,
+            la qualité et les nombreuses certifications (AOP, AOC, IGP, BIO) ainsi que la clarté de leurs productions
+          </p>
+          <a href="https://www.acheteralasource.com/vente-directe-producteur/bourgogne/yonne-89/fromages-1" target="_blank" class="liens">Voir nos produits</a>
+        </article>
+
+        <hr>
+      </section>
+
+      <!-- Quatrième section sur les fromages doux -->
+      <!-- On y retrouve également un slider sur 2 élements qui présentent 2 fromages choisis de notre part -->
+      <section class="section" id="section4">
+
+        <section class="slide  avis fp-noscroll">
+          <h1 class="fromagedoux">Les fromages doux
+          </h1>
+          <!-- Premier élément du slider -->
+          <div class="imagesDroite">
+            <h1>Le Chaource
+            </h1>
+          </div>
+
+          <article class="texteDroite">
+            <h4>« Le Chaource est un fromage à pâte molle à croûte fleurie, exclusivement produit à partir de lait de vache entier.
+              <span class="showm">Ce fromage doux et crémeux se déguste à tout moment du repas, cuisiné ou nature, et de préférence accompagné
+                par les vins de la région. »
+              </span>
+            </h4>
+            <!-- Les fromages possèdent un note en général établi auprès des clients sur une échelle de 1 à 5 en fonction des saveurs et du goût. -->
+            <h3>Note</h3>
+            <div class="note">
+              <img src="img/cheese.png" alt="Note Fromage">
+              <img src="img/cheese.png" alt="Note Fromage">
+              <img src="img/cheese.png" alt="Note Fromage">
+              <img src="img/cheese.png" alt="Note Fromage">
+              <img src="img/cheese.png" alt="Note Fromage">
+            </div>
+          </article>
+        </section>
+
+        <section class="slide  avis fp-noscroll">
+          <!-- Deuxième élément du slider -->
+          <div class="imagesGauche brillatsavarin">
+            <h1>
+              Le Brillat Savarin</h1>
+          </div>
+
+          <article class="texteGauche">
+            <h4>« Ce fromage “triple-crème” doux et très onctueux est le plus ancien des fromages à crème.
+              <span class="showm">
+                Gras et gourmand, il se consomme à l’envie pour grignoter ou au cours du repas, et se cuisine également très facilement pour
+                apporter au plat une touche de crémeux et de fraîcheur
+              </span>. »
+            </h4>
+            <!-- Les fromages possèdent un note en général établi auprès des clients sur une échelle de 1 à 5 en fonction des saveurs et du goût. -->
+            <h3>Note</h3>
+            <div class="noteDroite">
+              <img src="img/cheese.png" alt="Note Fromage">
+              <img src="img/cheese.png" alt="Note Fromage">
+              <img src="img/cheese.png" alt="Note Fromage">
+              <img src="img/cheese.png" alt="Note Fromage">
+            </div>
+          </article>
+        </section>
+        <hr>
+      </section>
+
+
+
+
+      <!-- Cinquième section sur les fromages forts -->
+      <!-- On y retrouve également un slider sur 2 élements qui présentent 2 fromages choisis de notre part -->
+      <section class="section" id="section5">
+
+        <section class="slide  avis fp-noscroll">
+          <h1 class="fromagedoux">Les fromages forts
+          </h1>
+          <!-- Premier élément du slider -->
+          <div class="imagesDroite epoisses">
+            <h1>L’Epoisse
+            </h1>
+          </div>
+
+          <article class="texteDroite">
+            <h4>« Ce fromage à pâte molle et à croûte lavée provenant de la ville
+              <span class="showm">éponyme est confectionné à partir de lait de vache. Il se caractérise par son goût équilibré, franc et subtil.
+                En bouche, sa pâte est souple et onctueuse; son odeur rappelle les sous-bois. Les bactéries de surface donnent
+                à sa croûte cette couleur orangée si particulière
+              </span>. »
+            </h4>
+            <!-- Les fromages possèdent un note en général établi auprès des clients sur une échelle de 1 à 5 en fonction des saveurs et du goût. -->
+            <h3>Note</h3>
+            <div class="note">
+              <img src="img/cheese.png" alt="Note Fromage">
+              <img src="img/cheese.png" alt="Note Fromage">
+              <img src="img/cheese.png" alt="Note Fromage">
+              <img src="img/cheese.png" alt="Note Fromage">
+              <img src="img/cheese.png" alt="Note Fromage">
+            </div>
+          </article>
+        </section>
+
+        <section class="slide  avis fp-noscroll">
+          <!-- Deuxième élément du slider -->
+          <div class="imagesGauche soumaintrain">
+            <h1>Le Soumaintrain</h1>
+          </div>
+
+          <article class="texteGauche">
+            <h4>« Il appartient à la famille des fromages à pâte molle et à croûte lavée
+              <span class="showm">
+                , et est exclusivement fabriqué avec du lait de vache entier, cru ou pasteurisé. Fromage au goût subtil, il peut se consommer
+                en début de repas avec une salade verte aussi bien qu’en plateau
+              </span>
+              . »
+            </h4>
+            <!-- Les fromages possèdent un note en général établi auprès des clients sur une échelle de 1 à 5 en fonction des saveurs et du goût. -->
+            <h3>Note</h3>
+            <div class="noteDroite">
+              <img src="img/cheese.png" alt="Note Fromage">
+              <img src="img/cheese.png" alt="Note Fromage">
+              <img src="img/cheese.png" alt="Note Fromage">
+              <img src="img/cheese.png" alt="Note Fromage">
+            </div>
+          </article>
+        </section>
+        <hr>
+      </section>
+
+
+
+      <!-- Sixième section sur les suggestions de recette de cuisine composé de fromage. -->
+      <!-- Le bouton "Voir la recette" nous redirige vers un lien externe Facebook où il y aura des articles sur les recettes. -->
+      <section class="section">
+        <div class="carreSuggestion">
+          <h5>Nos Suggestions</h5>
+          <article>
+            <img src="img/suggestion1.jpg" alt="Suggestion 1">
+            <h6>Recette chaource </h6>
+            <a href="https://www.facebook.com/Fromage-Yonne-158169361802397/?modal=admin_todo_tour" target="_blank" class="liens">Voir la recette</a>
+          </article>
+          <article>
+            <img src="img/suggestion2.jpg" style="width:40%" alt="Suggestion 2">
+            <h6>Recette fondue d'époisses</h6>
+            <a href="https://www.facebook.com/Fromage-Yonne-158169361802397/?modal=admin_todo_tour" target="_blank" class="liens">Voir la recette</a>
+          </article>
+          <article>
+            <img src="img/sylvain.png" alt="Suggestion 3">
+            <h6>Un fromager de confiance</h6>
+            <a href="http://www.lesfromagesdesylvain.fr/" target="_blank" class="liens">En savoir plus</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1VZCHKs0tuZ-7uXuIYPv_16iVAmVW0rPL" width="1200" height="800" frameborder=”10”
+            style=”border:10” allowfullscreen></iframe>
+        </div>
+
+      </section>
+
+
+      <!-- Septième section sur la newsletter, où l'utilisateur peut recevoir un mail en s'inscrivant. -->
+      <!-- Par contre, le sytème d'envoie de mail n'est pas encore fonctionnel -->
+      <section class="section">
+        <section class="newsletter">
+          <h3>Recevez maintenant nos recettes !</h3>
+          <p>Inscrivez-vous à nos cours de cuisine, des réductions et des conseils utiles !
+          </p>
+          <article>
+            <input type="text" name="email" placeholder="Entrer votre email">
+          </article>
+          <article>
+            <a href="#" class="boutton">SOUSCRIRE</a>
+          </article>
+
+        </section>
+        <p class="title_intensive">Site réalisé dans le cadre d'une semaine intensive à HETIC, tous les contenus et l'existence même de ce site ne participent
+          qu'à une fiction. Toute ressemblance avec une situation réelle ne serait que fortuite.</h1>
+
+        </p>
+
+
+
+        <!-- Huitième section FOOTER -->
+        <footer>
+          <div class="lienFoot">
+            <a href="contact.html">Contact</a>
+            <a href="">Mention Légale</a>
+            <a href="FAQ">Aide</a>
+          </div>
+
+          <div class="resauxSociaux">
+            <a target="_blank" href="#">
+              <img src="svg/link_b.svg" alt="Linkdin">
+            </a>
+            <a target="_blank" href="#">
+              <img src="svg/twitter_b.svg" alt="Twitter">
+            </a>
+            <a target="_blank" href="https://www.facebook.com/Fromage-Yonne-158169361802397/?modal=admin_todo_tour">
+              <img src="svg/facebook_b.svg" alt="Facebook">
+            </a>
+          </div>
+        </footer>
+      </section>
+
+      <a href="index.html" id="return-to-top"><i class="icon-chevron-up"></i></a>
+    </div>
+
+
+   
+
+  </main>
+  <div id="cnil" class="cnil">
+    <div class="content col-pad-lr-0-mb">
+      <div class="container">Des cas de brucellose, maladie touchant le bétail, ont été reportés par la CNPF. Par mesure de prévention et pour éviter
+        tout risque de contamination, nous recommandons à tous les consommateurs de ne consommer que des produits laitiers
+        pasteurisés. Pour en savoir plus, nous vous invitons à consulter notre
+        <a target="_blank" href="faq.html" style="text-decoration:underline">FAQ</a>.
+
+        <a id="hideCookieMsg" class="fa fa-2x fa-times"></a>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Script FullPage.js(plugin FullScreen + Scroll) et 
+    scrooloverflow( permet de scroll dans les section fullscreen)-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/scrolloverflow.min.js"></script>
+  <script src="js/jquery.fullPage.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
