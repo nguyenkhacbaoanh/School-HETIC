@@ -107,3 +107,6 @@ venv.bak/
 
 # file media
 *.mp4
+
+#large file in data science
+beer_reviews.csv
